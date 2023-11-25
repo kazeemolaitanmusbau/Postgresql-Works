@@ -91,3 +91,10 @@ SELECT * FROM departments;
 SELECT first_name || ' ' || last_name AS fullname,  job_id, salary
 FROM employees
 WHERE first_name LIKE 'S%';
+
+
+-- 2. Write a query to select employee with the highest salary
+
+SELECT * FROM employees
+ORDER BY salary DESC
+FETCH NEXT 1 ROWS ONLY;
