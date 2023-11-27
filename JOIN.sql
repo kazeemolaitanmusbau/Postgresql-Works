@@ -15,6 +15,18 @@ VALUES(11, 50),(8, 29),(4, 90),(5, 49),(1, 60),(6, 72),(2, 44);
 
 
 -- RESULT THE ID AND NAME OF STUDENTS WITH MISSING RESULT
-
+SELECT S.id, S.fullname, R.grade
+FROM student AS S
+LEFT JOIN result AS R
+ON id = std_id
+WHERE grade IS NULL;
 
 -- RESULT THE ID AND NAME OF STUDENTS WHICH FAILS THE TEST. PASS MARK IS FROM 50 ABOVE
+SELECT S.id, S.fullname, R.grade
+FROM student S
+LEFT JOIN
+result R
+ON S.id = R.std_id
+WHERE R.grade< 50;
+
+SELECT * FROM result;
