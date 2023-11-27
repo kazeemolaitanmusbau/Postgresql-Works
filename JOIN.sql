@@ -30,3 +30,7 @@ ON S.id = R.std_id
 WHERE R.grade< 50;
 
 SELECT * FROM result;
+
+
+
+
