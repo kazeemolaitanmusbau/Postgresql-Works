@@ -109,10 +109,18 @@ GROUP BY  department_id;
 -- 16. Write a SQL query to display the 5 least earning employees
 
 -- 17. Find the employees hired in the 80s
+SELECT * FROM employees
+WHERE YEAR(hire_date) BETWEEN 1980 AND 1989;
 
 -- 18. Display the employees first name and the name in reverse order
 
 -- 19. Find the employees who joined the company after 15th of the month
 
-20. Display the managers and the reporting employees who work in different departments
+-- 20. Display the managers and the reporting employees who work in different departments
 
+SELECT concat( E.first_name, " ", E.last_name) as employee_name ,  concat(M.first_name, " ", M.last_name) manager_name, E.salary,
+E.department_id AS emp_department_id, m.department_id mag_department_id
+FROM employees E 
+LEFT JOIN employees M
+ON E.manager_id = M.employee_id
+WHERE E.department_id<>m.department_id;
