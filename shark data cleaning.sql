@@ -49,7 +49,7 @@ MODIFY `Total Deal Equity`  INT;
 
 
 /*
-Deal Valuation  Number of sharks in deal  Investment Amount Per Shark  Equity Per Shark
+      
 
 */
 
@@ -57,32 +57,41 @@ Deal Valuation  Number of sharks in deal  Investment Amount Per Shark  Equity Pe
 
 -- UPDATE the Total Deal Equity to 0 where they are empty
 UPDATE data
-SET `Total Deal Equity` = 0
-WHERE `Total Deal Equity` = "";
+SET `Deal Valuation` = 0
+WHERE `Deal Valuation` = "";
 -- change the datatype of the Total Deal Equityfrom text to int
 ALTER TABLE data
-MODIFY `Total Deal Equity`  INT;
+MODIFY `Deal Valuation`  INT;
 
 
 
 
 -- UPDATE the Total Deal Equity to 0 where they are empty
 UPDATE data
-SET `Total Deal Equity` = 0
-WHERE `Total Deal Equity` = "";
+SET `Number of sharks in deal` = 0
+WHERE `Number of sharks in deal` = "";
 -- change the datatype of the Total Deal Equityfrom text to int
 ALTER TABLE data
-MODIFY `Total Deal Equity`  INT;
+MODIFY `Number of sharks in deal`  INT;
 
 
 
 
 -- UPDATE the Total Deal Equity to 0 where they are empty
 UPDATE data
-SET `Total Deal Equity` = 0
-WHERE `Total Deal Equity` = "";
+SET `Investment Amount Per Shark` = 0
+WHERE `Investment Amount Per Shark` = "";
 -- change the datatype of the Total Deal Equityfrom text to int
 ALTER TABLE data
-MODIFY `Total Deal Equity`  INT;
+MODIFY `Investment Amount Per Shark`  INT;
 
 
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Equity Per Shark` = 0
+WHERE `Equity Per Shark` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Equity Per Shark`  INT;
