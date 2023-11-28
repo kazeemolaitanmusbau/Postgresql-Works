@@ -100,7 +100,7 @@ MODIFY `Equity Per Shark`  INT;
 /*
     
 
-  Lori Greiner Investment Equity
+  
 Robert Herjavec Investment Amount Robert Herjavec Investment Equity
 Daymond John Investment Amount Daymond John Investment Equity
 Kevin O Leary Investment Amount  Kevin O Leary Investment Equity
@@ -153,3 +153,9 @@ ALTER TABLE data
 MODIFY `Lori Greiner Investment Amount`  INT;
 
 
+UPDATE data
+SET `Lori Greiner Investment Equity` = 0
+WHERE `Lori Greiner Investment Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Lori Greiner Investment Equity`  INT;
