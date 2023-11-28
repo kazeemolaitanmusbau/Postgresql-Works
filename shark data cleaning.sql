@@ -48,6 +48,10 @@ ALTER TABLE data
 MODIFY `Total Deal Equity`  INT;
 
 
+/*
+Deal Valuation  Number of sharks in deal  Investment Amount Per Shark  Equity Per Shark
+
+*/
 
 
 
