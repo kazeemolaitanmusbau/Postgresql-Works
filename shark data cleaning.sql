@@ -7,6 +7,7 @@ WHERE `Total Deal Amount` = "";
 DESCRIBE data;
 
 
+
 -- modify the format the of the original air date
 UPDATE data
 SET  `Original Air Date` = str_to_date(`Original Air Date`, "%Y-%M-%d");
@@ -33,5 +34,51 @@ WHERE `Total Deal Equity` = "";
 ALTER TABLE data
 MODIFY `Total Deal Equity`  INT;
 
+
+
+
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Total Deal Equity` = 0
+WHERE `Total Deal Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Total Deal Equity`  INT;
+
+
+
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Total Deal Equity` = 0
+WHERE `Total Deal Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Total Deal Equity`  INT;
+
+
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Total Deal Equity` = 0
+WHERE `Total Deal Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Total Deal Equity`  INT;
+
+
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Total Deal Equity` = 0
+WHERE `Total Deal Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Total Deal Equity`  INT;
 
 
