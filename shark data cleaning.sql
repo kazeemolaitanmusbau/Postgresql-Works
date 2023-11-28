@@ -184,3 +184,11 @@ WHERE `Daymond John Investment Amount` = "";
 -- change the datatype of the Total Deal Equityfrom text to int
 ALTER TABLE data
 MODIFY `Daymond John Investment Amount`  INT;
+
+
+UPDATE data
+SET `Daymond John Investment Amount` = 0
+WHERE `Daymond John Investment Amount` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Daymond John Investment Amount`  INT;
