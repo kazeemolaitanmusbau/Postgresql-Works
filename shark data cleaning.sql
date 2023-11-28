@@ -95,3 +95,49 @@ WHERE `Equity Per Shark` = "";
 -- change the datatype of the Total Deal Equityfrom text to int
 ALTER TABLE data
 MODIFY `Equity Per Shark`  INT;
+
+
+/*
+    
+Mark Cuban Investment Amount Mark Cuban Investment Equity
+Lori Greiner Investment Amount  Lori Greiner Investment Equity
+Robert Herjavec Investment Amount Robert Herjavec Investment Equity
+Daymond John Investment Amount Daymond John Investment Equity
+Kevin O Leary Investment Amount  Kevin O Leary Investment Equity
+
+*/
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Barbara Corcoran Investment Amount` = 0
+WHERE `Barbara Corcoran Investment Amount` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Barbara Corcoran Investment Amount`  INT;
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Barbara Corcoran Investment Equity` = 0
+WHERE `Barbara Corcoran Investment Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Barbara Corcoran Investment Equity`  INT;
+
+
+
+-- UPDATE the Total Deal Equity to 0 where they are empty
+UPDATE data
+SET `Barbara Corcoran Investment Equity` = 0
+WHERE `Barbara Corcoran Investment Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Barbara Corcoran Investment Equity`  INT;-- UPDATE the Total Deal Equity to 0 where they are empty
+
+
+UPDATE data
+SET `Barbara Corcoran Investment Equity` = 0
+WHERE `Barbara Corcoran Investment Equity` = "";
+-- change the datatype of the Total Deal Equityfrom text to int
+ALTER TABLE data
+MODIFY `Barbara Corcoran Investment Equity`  INT;
