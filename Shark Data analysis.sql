@@ -17,4 +17,8 @@
 -- 12. How much did Daymond John typically invest in startups, and what equity did he receive?
 -- 13. How much did Kevin O'Leary typically invest in startups, and what equity did he receive?
 
--- 14. Which entrepreneur has secured the largest investment deal in "Shark Tank" history?
+-- 14. Which entrepreneur has secured the largest investment deal in "Shark Tank" history
+
+-- 15.  Which shark has invested the most money in businesses related to the food and beverage industry?
+
+-- 16. Are there any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
