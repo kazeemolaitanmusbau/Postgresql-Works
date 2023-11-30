@@ -24,3 +24,8 @@
 -- 16. Are there any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
 
 -- 17. Did startups with a larger number of entrepreneurs tend to secure more favorable deals?
+
+
+-- 18. Which industry or product category receives the highest average deal valuation from the sharks?
+-- 19. How do the total investments made by male and female entrepreneurs compare?
+-- 20. Are there any correlations between the amount of equity offered and the probability of securing a deal?
