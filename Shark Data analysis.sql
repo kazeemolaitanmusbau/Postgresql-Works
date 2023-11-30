@@ -11,11 +11,30 @@ FROM `Sharks Tank`
 GROUP BY Industry
 ORDER BY `count of industry` DESC;
 -- 3. How was the gender distribution among the entrepreneurs who pitched their startups?
-
+SELECT `Pitchers Gender`, count(`Pitchers Gender`)
+FROM `sharks tank`
+GROUP BY  `Pitchers Gender`;
 -- 4. Which city and state were most entrepreneurs from?
 
+SELECT `Pitchers State`, `Pitchers City`, count(`Pitchers City`)
+FROM `sharks tank`
+GROUP BY `Pitchers State` ,`Pitchers City`
+ORDER BY `Pitchers State`;
+
+
+SELECT `Pitchers State`, `Pitchers City`, count(`Pitchers City`)
+FROM `sharks tank`
+GROUP BY 1 ,2
+ORDER BY 3;
+
 -- 5. How many of the pitches actually got a deal with the sharks?
+
+SELECT count(`Got Deal`) `count got deal` from `Sharks Tank`
+WHERE `Got Deal`= 1;
 -- 6. What was the total amount secured by startups in deals?
+SELECT sum(`Investment Amount Per Shark`) `Total Amount`
+FROM `sharks tank`
+WHERE `Got Deal`= 1;
 -- 7. What was the total Average equity given up by startups in each indutries when got deals?
 
 
