@@ -1,0 +1,1 @@
+-- 1. What is the distribution of startups across different seasons of Shark Tank?
