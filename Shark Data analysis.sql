@@ -22,3 +22,5 @@
 -- 15.  Which shark has invested the most money in businesses related to the food and beverage industry?
 
 -- 16. Are there any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
+
+-- 17. Did startups with a larger number of entrepreneurs tend to secure more favorable deals?
