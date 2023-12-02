@@ -156,3 +156,5 @@ SELECT EXTRACT(YEAR FROM hire_date) AS YEAR_, COUNT(employee_id) AS "count of hi
 FROM employees
 GROUP BY YEAR_ 
 ORDER BY "count of hired" DESC;
+
+-- 9. Find the salary range of employees 
