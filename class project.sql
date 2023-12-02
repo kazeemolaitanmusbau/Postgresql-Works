@@ -85,12 +85,19 @@ SELECT * FROM departments;
 
 -- 1. Select employees first name, last name, job_id and salary whose first
 -- name starts with alphabet S
-
+SELECT first_name || ' '  || last_name AS fullname, job_id, salary
+FROM employees
+WHERE first_name LIKE 'S%';
 
 
 
 -- 2. Write a query to select employee with the highest salary
 
+SELECT job_id, first_name || ' '  || last_name AS fullname, salary
+FROM employees
+ORDER BY salary DESC
+OFFSET 0
+FETCH NEXT 1 ROWS ONLY;
 
 -- 3. Select employee with the second highest salary
 
