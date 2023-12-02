@@ -101,6 +101,16 @@ FETCH NEXT 1 ROWS ONLY;
 
 -- 3. Select employee with the second highest salary
 
-
+SELECT job_id, first_name || ' '  || last_name AS fullname, salary
+FROM employees
+ORDER BY salary DESC
+OFFSET 1
+FETCH NEXT 1 ROWS ONLY;
 -- 4. Fetch employees with 2nd or 3rd highest salary
+
+SELECT job_id, first_name || ' '  || last_name AS fullname, salary
+FROM employees
+ORDER BY salary DESC
+OFFSET 1
+FETCH NEXT 2 ROWS ONLY;
 
