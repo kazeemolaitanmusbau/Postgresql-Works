@@ -170,3 +170,8 @@ SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary,
 			END AS salary_group
 		FROM employees;
 		
+-- 11. Select the employees whose first_name contains “an”
+
+SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary
+FROM employees
+WHERE first_name LIKE '%an%';
