@@ -79,34 +79,21 @@ INSERT INTO employees VALUES (128, 'Steven' , 'Markle' , 'SMARKLE' , '650.124.14
 INSERT INTO employees VALUES (129, 'Laura' , 'Bissot' , 'LBISSOT' , '650.124.5234' ,'1997-09-10' , 'ST_CLERK' , 3300 , NULL , 121 , 50);
 INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.6234' , '1997-10-12' , 'ST_CLERK' , 2800 , NULL , 121 , 110);
 
-
+SELECT * FROM employees;
+SELECT * FROM departments;
 
 
 -- 1. Select employees first name, last name, job_id and salary whose first
 -- name starts with alphabet S
 
-SELECT * FROM employees;
-SELECT * FROM departments;
 
-SELECT first_name || ' ' || last_name AS fullname,  job_id, salary
-FROM employees
-WHERE first_name LIKE 'S%';
 
 
 -- 2. Write a query to select employee with the highest salary
 
-SELECT * FROM employees
-ORDER BY salary DESC
-FETCH NEXT 1 ROWS ONLY;
 
 -- 3. Select employee with the second highest salary
-SELECT * FROM employees
-ORDER BY salary DESC
-OFFSET 1
-FETCH NEXT 1 ROWS ONLY;
+
 
 -- 4. Fetch employees with 2nd or 3rd highest salary
-SELECT * FROM employees
-ORDER BY salary DESC
-OFFSET 1
-FETCH NEXT 2 ROWS ONLY;
+
