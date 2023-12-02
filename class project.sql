@@ -178,6 +178,6 @@ WHERE first_name LIKE '%an%';
 
 -- 12. Select employee first name and the corresponding phone number in the format (_ _ _)-(_ _ _)-(__ _ _)
 
-select 'oleeitan';
-
-SELECT REPLACE('o
+SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary,
+REPLACE(phone_number, '.', '-') AS phone_number
+FROM employees;
