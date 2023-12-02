@@ -183,3 +183,6 @@ REPLACE(phone_number, '.', '-') AS phone_number
 FROM employees;
 
 -- 13. Find the employees who joined in August, 1994.
+SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary
+FROM employees
+where EXTRACT(YEAR FROM hire_date) = 1994 and EXTRACT(MONTH FROM hire_date)=8;
