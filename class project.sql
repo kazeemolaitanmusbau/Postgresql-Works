@@ -161,3 +161,12 @@ ORDER BY "count of hired" DESC;
 SELECT MAX(salary) - MIN(salary) as range_ FROM employees;
 
 -- 10. Write a query to divide people into three groups based on their salaries
+SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary,
+	CASE 
+		WHEN salary <= 10000 THEN 'LOW SALARY'
+		WHEN salary>10000 AND salary<=20000 THEN 'MEDIUM SALARY'
+		ELSE
+			'HIGH SALARY'
+			END AS salary_group
+			
+		FROM employees;
