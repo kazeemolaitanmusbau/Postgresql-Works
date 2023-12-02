@@ -158,3 +158,4 @@ GROUP BY YEAR_
 ORDER BY "count of hired" DESC;
 
 -- 9. Find the salary range of employees 
+SELECT MAX(salary) - MIN(salary) as range_ FROM employees;
