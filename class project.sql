@@ -114,3 +114,4 @@ ORDER BY salary DESC
 OFFSET 1
 FETCH NEXT 2 ROWS ONLY;
 
+-- 5. Write a query to select employees and their corresponding managers and their salaries
