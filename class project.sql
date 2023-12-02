@@ -152,3 +152,7 @@ USING (department_id)
 GROUP BY d.department_name;
 
 -- 8. Get the count of employees hired year wise
+SELECT EXTRACT(YEAR FROM hire_date) AS YEAR_, COUNT(employee_id) AS "count of hired"
+FROM employees
+GROUP BY YEAR_ 
+ORDER BY "count of hired" DESC;
