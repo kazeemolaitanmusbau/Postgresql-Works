@@ -115,3 +115,40 @@ OFFSET 1
 FETCH NEXT 2 ROWS ONLY;
 
 -- 5. Write a query to select employees and their corresponding managers and their salaries
+SELECT E.first_name || ' ' || E.last_name AS empfullname,
+	 MG.first_name || ' ' || MG.last_name AS magfullname
+	 FROM employees AS E
+	 LEFT JOIN 
+	 employees AS MG
+	 ON MG.employee_id = E.manager_id;
+	 
+-- 6. Write a query to show count of employees under each manager in descending order
+SELECT manager_id,  COUNT(employee_id) AS "count of employees"
+FROM employees
+GROUP BY manager_id
+ORDER BY "count of employees" DESC;
+
+
+SELECT 
+	 MG.first_name || ' ' || MG.last_name AS magfumllnae,
+	count( E.first_name ) AS totalemployees
+	 FROM employees AS E
+	 LEFT JOIN 
+	 employees AS MG
+	 ON MG.employee_id = E.manager_id
+	 GROUP BY magfumllnae
+	 ORDER BY  totalemployees DESC;
+	 
+-- 7. Find the count of employees in each department
+
+SELECT department_id, COUNT(employee_id)
+FROM employees
+GROUP BY department_id;
+
+SELECT d.department_name, COUNT(e.employee_id)
+FROM departments AS d
+LEFT JOIN employees AS e
+USING (department_id)
+GROUP BY d.department_name;
+
+-- 8. Get the count of employees hired year wise
