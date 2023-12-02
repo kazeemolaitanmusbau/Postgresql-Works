@@ -168,5 +168,5 @@ SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary,
 		ELSE
 			'HIGH SALARY'
 			END AS salary_group
-			
 		FROM employees;
+		
