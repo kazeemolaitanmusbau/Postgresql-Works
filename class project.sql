@@ -159,3 +159,5 @@ ORDER BY "count of hired" DESC;
 
 -- 9. Find the salary range of employees 
 SELECT MAX(salary) - MIN(salary) as range_ FROM employees;
+
+-- 10. Write a query to divide people into three groups based on their salaries
