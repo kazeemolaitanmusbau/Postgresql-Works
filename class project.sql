@@ -181,3 +181,5 @@ WHERE first_name LIKE '%an%';
 SELECT job_id, hire_date, first_name || ' ' || last_name as fullname, salary,
 REPLACE(phone_number, '.', '-') AS phone_number
 FROM employees;
+
+-- 13. Find the employees who joined in August, 1994.
