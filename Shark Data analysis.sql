@@ -144,10 +144,18 @@ WHERE industry = "Food and Beverage" ;
 
 -- 16. Are they any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
 SELECT * FROM `Sharks Tank`;
-
-SELECT `Multiple Entrepreneurs`,  `Original Ask Amount` - `Total Deal Amount`
+SELECT `Multiple Entrepreneurs`, COUNT(`Multiple Entrepreneurs`)
 FROM `Sharks Tank`
-WHERE `Deal Valuation` IS NOT NULL;
+WHERE `GOT DEAL ` IS NOT NULL
+group by `Multiple Entrepreneurs`;
+
+WITH TEMPO AS (SELECT `Multiple Entrepreneurs`,  `Original Ask Amount` - `Total Deal Amount` AS W
+FROM `Sharks Tank`
+WHERE `Deal Valuation` IS NOT NULL)
+SELECT  `Multiple Entrepreneurs`, COUNT(w) FROM TEMPO
+WHERE W>=0
+GROUP BY  `Multiple Entrepreneurs` ;
+
 -- 17. Did startups with a larger number of entrepreneurs tend to secure more favorable deals?
 
 SELECT industry,  `Valuation Requested`, `Deal Valuation`
