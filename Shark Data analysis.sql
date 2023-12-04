@@ -164,5 +164,11 @@ FROM `Sharks Tank`
 WHERE `Deal Valuation` IS NOT NULL;
 
 -- 18. Which industry or product category receives the highest average deal valuation from the sharks?
+ SELECT industry, avg(`Deal Valuation`) as e
+ FROM `Sharks Tank`
+ GROUP BY industry
+ ORDER BY E DESC;
 -- 19. How do the total investments made by male and female entrepreneurs compare?
+
+
 -- 20. Are there any correlations between the amount of equity offered and the probability of securing a deal?
