@@ -149,10 +149,11 @@ FROM `Sharks Tank`
 WHERE `GOT DEAL ` IS NOT NULL
 group by `Multiple Entrepreneurs`;
 
-WITH TEMPO AS (SELECT `Multiple Entrepreneurs`,  `Original Ask Amount` - `Total Deal Amount` AS W
+WITH TEMPO AS (
+SELECT `Multiple Entrepreneurs`,  `Original Ask Amount` - `Total Deal Amount` AS W
 FROM `Sharks Tank`
 WHERE `Deal Valuation` IS NOT NULL)
-SELECT  `Multiple Entrepreneurs`, COUNT(w) FROM TEMPO
+SELECT  `Multiple Entrepreneurs`, COUNT(w) AS `count of favourable deal`FROM TEMPO
 WHERE W>=0
 GROUP BY  `Multiple Entrepreneurs` ;
 
