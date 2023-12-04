@@ -144,12 +144,15 @@ WHERE industry = "Food and Beverage" ;
 
 -- 16. Are they any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
 SELECT * FROM `Sharks Tank`;
-CREATE VIEW `A` as
-SELECT industry,  `Valuation Requested`, `Deal Valuation`
+
+SELECT `Multiple Entrepreneurs`,  `Valuation Requested`, `Deal Valuation`
 FROM `Sharks Tank`
 WHERE `Deal Valuation` IS NOT NULL;
 -- 17. Did startups with a larger number of entrepreneurs tend to secure more favorable deals?
 
+SELECT industry,  `Valuation Requested`, `Deal Valuation`
+FROM `Sharks Tank`
+WHERE `Deal Valuation` IS NOT NULL;
 
 -- 18. Which industry or product category receives the highest average deal valuation from the sharks?
 -- 19. How do the total investments made by male and female entrepreneurs compare?
