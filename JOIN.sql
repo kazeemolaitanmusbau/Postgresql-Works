@@ -193,3 +193,13 @@ WHERE `last name` = "kazeem";
 
 -- delete entire table from the database
 DROP TABLE weekend;
+
+
+-- select distinct and column alias 
+SELECT * FROM weekend;
+
+-- select distinct is use to get rid of duplicate records
+SELECT DISTINCT *  FROM weekend;
+SELECT concat(`first name`, " ", `last name`) AS `full name`,
+age AS `AGE GROUP`, salary 
+FROM weekend;
