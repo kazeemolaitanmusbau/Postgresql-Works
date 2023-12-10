@@ -151,12 +151,12 @@ CREATE DATABASE olaitan;
 
 -- to make database active
 USE olaitan;
-
+drop table weekend;
 CREATE TABLE weekend(
 `first name` varchar(12),
 `last name` char(12),
-address text,
 age int,
+address text,
 salary decimal(30, 2),
 hire_date date 
 );
@@ -168,5 +168,14 @@ SELECT * FROM weekend;
 SELECT `first name`, salary
 FROM weekend;
 
+-- to insert into table
+INSERT INTO weekend()
+VALUES ("olaitan", "kazeem", 12, "olowoira", 38474.47, "2015-06-11"),
+ ("james", "sancho", 22, "lekki", 72736.12, "1981-11-23"),
+  ("kola", "Rasheed", 32, "18 berger", 35837.23, "2000-10-06"),
+   ("Alao", "Smith", 22, "England", 35665.47, "2015-06-11"),
+    ("Rihael", "Olaitan", 32, "ojo", 38474.47, "2015-06-11"),
+     ("olaitan", "kazeem", 12, "olowoira", 38474.47, "2015-06-11"),
+      ("olaitan", "kazeem", 12, "olowoira", 38474.47, "2015-06-11");
 
-
+SELECT * FROM weekend;
