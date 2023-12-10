@@ -124,3 +124,36 @@ FROM employees E
 LEFT JOIN employees M
 ON E.manager_id = M.employee_id
 WHERE E.department_id<>m.department_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
