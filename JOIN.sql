@@ -145,44 +145,28 @@ LINE
 
 
 -- how to create database
+
+
+CREATE DATABASE olaitan;
+
+-- to make database active
+USE olaitan;
+
 CREATE TABLE weekend(
-firstname varchar(12),
-lastname char(12),
+`first name` varchar(12),
+`last name` char(12),
 address text,
 age int,
 salary decimal(30, 2),
 hire_date date 
+);
 
-)
+-- to see information inside table
+SELECT * FROM weekend;
 
-
-
-
--- text datatype
-	varchar() char() text
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- select the firstname and salary
+SELECT `first name`, salary
+FROM weekend;
 
 
 
