@@ -179,3 +179,14 @@ VALUES ("olaitan", "kazeem", 12, "olowoira", 38474.47, "2015-06-11"),
       ("olaitan", "kazeem", 12, "olowoira", 38474.47, "2015-06-11");
 
 SELECT * FROM weekend;
+
+-- how to delete record
+-- delete, truncate, drop
+
+-- delete all the records in the table
+DELETE FROM weekend;
+truncate weekend;
+
+-- delete records when last ks kazeem
+DELETE FROM weekend
+WHERE `last name` = "kazeem";
