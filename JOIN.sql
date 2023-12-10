@@ -129,8 +129,37 @@ WHERE E.department_id<>m.department_id;
 
 
 
+-- DDL:: DATA DEFINATION LANGUAGE
+
+-- DML: DATA MANIPULATION LANGUAGE
+
+-- DCL ; DATA CONTROL LANGUAGE
+
+/*
+THIS
+IS 
+MULTIPLE
+LINE
+*/
 
 
+
+-- how to create database
+CREATE TABLE weekend(
+firstname varchar(12),
+lastname char(12),
+address text,
+age int,
+salary decimal(30, 2),
+hire_date date 
+
+)
+
+
+
+
+-- text datatype
+	varchar() char() text
 
 
 
