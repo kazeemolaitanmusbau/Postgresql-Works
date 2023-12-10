@@ -190,3 +190,6 @@ truncate weekend;
 -- delete records when last ks kazeem
 DELETE FROM weekend
 WHERE `last name` = "kazeem";
+
+-- delete entire table from the database
+DROP TABLE weekend;
