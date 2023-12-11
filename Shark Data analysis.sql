@@ -145,6 +145,47 @@ max(`Kevin O Leary Investment Amount`) max
 WHERE industry = "Food and Beverage" ;
 
 
+-- __________________________________________________________________
+SELECT  "Barbara Corcoran" as name,  
+sum(`Barbara Corcoran Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage"
+
+UNION
+
+SELECT  "Mark Cuban" as name,  
+sum(`Mark Cuban Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage"
+
+UNION
+
+SELECT  "Lori Greiner" as name,  
+sum(`Lori Greiner Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage"
+
+UNION
+
+SELECT  "Robert Herjavec" as name,  
+sum(`Robert Herjavec Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage"
+
+UNION
+
+SELECT  "Daymond John" as name,  
+sum(`Daymond John Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage"
+
+UNION 
+
+SELECT  "Kevin O Leary" as name,  
+sum(`Kevin O Leary Investment Amount`) max
+ FROM `Sharks Tank`
+WHERE industry = "Food and Beverage" ;
+
 
 
 -- 16. Are they any trends in the industries or product categories that tend to receive higher valuation offers from the sharks?
