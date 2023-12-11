@@ -36,6 +36,9 @@ SELECT sum(`Investment Amount Per Shark`) `Total Amount`
 FROM `sharks tank`
 WHERE `Got Deal`= 1;
 select * from `Sharks tank`;
+
+SELECT sum(`Investment Amount Per Shark`) `Total Amount`
+FROM `sharks tank`;
 -- 7. What was the total Average equity given up by startups in each indutries when got deals?
 SELECT Industry, ROUND(avg(`Total Deal Equity`), 2) `Average equity`
 FROM `sharks tank`
@@ -57,6 +60,7 @@ describe `sharks tank`;
 SELECT SUM(`Daymond John Investment Amount`)`Total Amount`,
  SUM(`Daymond John Investment Equity`) `Total Equity`
  FROM `sharks tank`;
+ 
 -- 13. How much did Kevin O'Leary typically invest in startups, and what equity did he receive?
 SELECT SUM(`Kevin O Leary Investment Amount`)`Total Amount`,
  SUM(`Kevin O Leary Investment Equity`) `Total Equity`
