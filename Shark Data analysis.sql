@@ -35,6 +35,7 @@ WHERE `Got Deal`= 1;
 SELECT sum(`Investment Amount Per Shark`) `Total Amount`
 FROM `sharks tank`
 WHERE `Got Deal`= 1;
+select * from `Sharks tank`;
 -- 7. What was the total Average equity given up by startups in each indutries when got deals?
 SELECT Industry, ROUND(avg(`Total Deal Equity`), 2) `Average equity`
 FROM `sharks tank`
