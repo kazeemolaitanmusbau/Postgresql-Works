@@ -1,4 +1,4 @@
-SELECT * FROM `Sharks Tank`;
+with a as (SELECT * FROM `Sharks Tank`) select * from a;
 
 -- 1. What is the distribution of startups across different seasons of Shark Tank?
 WITH A AS (SELECT `Season Number`, count(`Startup Name`) `count of pitchers`
@@ -68,7 +68,7 @@ SELECT SUM(`Kevin O Leary Investment Amount`)`Total Amount`,
 -- 14. Which entrepreneur has secured the largest investment deal in "Shark Tank" history
 
 
-SELECT 'Kevin O Leary' as name, SUM(`Kevin O Leary Investment Amount`)`Total Amount`,
+with a as (SELECT 'Kevin O Leary' as name, SUM(`Kevin O Leary Investment Amount`)`Total Amount`,
  SUM(`Kevin O Leary Investment Equity`) `Total Equity`
  FROM `sharks tank`
  
@@ -100,7 +100,7 @@ FROM
 union
 SELECT   "Mark Cuban" as name, SUM(`Mark Cuban Investment Amount`)`Total Amount`,
  SUM(`Mark Cuban Investment Equity`) `Total Equity`
- FROM `sharks tank`;
+ FROM `sharks tank`) select * from a;
 
 -- 15.  Which shark has invested the most money in businesses related to the food and beverage industry?
 
