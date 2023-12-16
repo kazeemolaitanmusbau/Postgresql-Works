@@ -293,3 +293,37 @@ VALUES('ADIDAS', "good");
 
 INSERT INTO T5
 VALUES('gucci', "BAD");
+
+-- PRIMARY KEY
+CREATE TABLE T6(
+stud_id int PRIMARY KEY,
+fullname VARCHAR(12));
+
+INSERT INTO T6
+VALUES(1, "OLAITAN");
+
+SELECT * FROM T6;
+
+INSERT INTO T6
+VALUES(3, "SMITH");
+
+
+
+CREATE TABLE T7(
+stud_id int PRIMARY KEY AUTO_INCREMENT,
+fullname VARCHAR(12));
+
+INSERT INTO T7(fullname)
+VALUES("olaitan"), ("james"), ("smith"), ("sancho");
+
+SELECT * FROM T7;
+
+
+CREATE TABLE T8(
+stud_id int PRIMARY KEY AUTO_INCREMENT,
+fullname VARCHAR(12))AUTO_INCREMENT=200   ;
+
+INSERT INTO T8(fullname)
+VALUES("olaitan"), ("james"), ("smith"), ("sancho");
+
+SELECT * FROM T8;
