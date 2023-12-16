@@ -286,3 +286,10 @@ CREATE TABLE T5(
 brandname text,
 rating ENUM("good", "bad"));
 
+SELECT * FROM T5;
+
+INSERT INTo T5
+VALUES('ADIDAS', "good");
+
+INSERT INTO T5
+VALUES('gucci', "BAD");
