@@ -252,3 +252,17 @@ VALUES("Smith", "Kaduna");
 
 INSERT INTO T2(fullname)
 VALUES("Ade");
+
+
+-- unique
+
+CREATE TABLE T3(
+std_id int,
+email VARCHAR(23) UNIQUE );
+
+SELECT * FROM T3;
+INSERT INTO T3
+VALUES(1, "james@gmail.com");
+
+INSERT INTO T3
+VALUES(2, "james@gmail.com");
