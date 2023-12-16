@@ -279,3 +279,10 @@ VALUES("JAMES", 23);
 
 INSERT INTO T4
 VALUES("SANCHO", 17);
+
+-- ENUM
+
+CREATE TABLE T5(
+brandname text,
+rating ENUM("good", "bad"));
+
