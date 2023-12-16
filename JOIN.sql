@@ -203,3 +203,41 @@ SELECT DISTINCT *  FROM weekend;
 SELECT concat(`first name`, " ", `last name`) AS `full name`,
 age AS `AGE GROUP`, salary 
 FROM weekend;
+
+
+
+
+
+
+
+
+/*
+Not null
+Default
+Unique
+check
+enum
+primary key
+auto_increment
+foreign key
+*/
+CREATE DATABASE Y;
+
+USE Y;
+
+CREATE TABLE T1(
+cust_id int, 
+fullname varchar(12) NOT NULL );
+
+SELECT DISTINCT * FROM T1;
+
+INSERT INTO T1()
+VALUES(1, "OLAITAN");
+
+INSERT INTO T1(fullname)
+VALUES("OLAITAN");
+
+INSERT INTO T1(cust_id)
+VALUES(4);
+
+
