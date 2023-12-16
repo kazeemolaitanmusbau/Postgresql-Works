@@ -327,3 +327,37 @@ INSERT INTO T8(fullname)
 VALUES("olaitan"), ("james"), ("smith"), ("sancho");
 
 SELECT * FROM T8;
+
+CREATE TABLE customer(
+cust_id INT PRIMARY KEY AUTO_INCREMENT,
+firstname VARCHAR(12) NOT NULL,
+address TEXT NOT NULL,
+age INT CHECK(age>=10));
+
+
+INSERT INTO customer(firstname, address, age)
+VALUES("olaitan", 'begger', 25),
+	("james", 'lekki', 15),
+    ("richael", 'agege', 35),
+    ("sancho", 'ogba', 16),
+    ("Ada", 'oshodi', 24);
+ DELETE FROM customer
+ WHERE cust_id = 5;
+ 
+SELECT * FROM customer;
+
+CREATE TABLE order_info(
+cus_id int,
+quantity int,
+price int, 
+productname ENUM("A", "B", "C"),
+FOREIGN KEY(cus_id) REFERENCES customer(cust_id) ON DELETE CASCADE
+);
+
+INSERT INTO order_info()
+VALUES(5, 27, 715, "a");
+
+SELECT * FROM order_info;
+
+DELETE FROM order_info
+ WHERE cust_id = 5;
