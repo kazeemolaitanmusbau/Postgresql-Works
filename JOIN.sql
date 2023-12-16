@@ -352,7 +352,7 @@ quantity int,
 price int, 
 productname ENUM("A", "B", "C"),
 FOREIGN KEY(cus_id) REFERENCES customer(cust_id) ON DELETE CASCADE
-);
+ON UPDATE CASCADE);
 
 INSERT INTO order_info()
 VALUES(5, 27, 715, "a");
@@ -361,3 +361,6 @@ SELECT * FROM order_info;
 
 DELETE FROM order_info
  WHERE cust_id = 5;
+
+DROP TABLE customer;
+DROP TABLE order_info;
