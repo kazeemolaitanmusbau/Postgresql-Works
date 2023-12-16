@@ -266,3 +266,16 @@ VALUES(1, "james@gmail.com");
 
 INSERT INTO T3
 VALUES(2, "james@gmail.com");
+
+-- CHECK 
+CREATE TABLE T4(
+fullname VARCHAR(12),
+age int CHECK(age>=18)) ;
+
+SELECT * FROM T4;
+
+INSERT INTO T4
+VALUES("JAMES", 23);
+
+INSERT INTO T4
+VALUES("SANCHO", 17);
