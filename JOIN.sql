@@ -240,4 +240,15 @@ VALUES("OLAITAN");
 INSERT INTO T1(cust_id)
 VALUES(4);
 
+-- DEFAULT
+CREATE TABLE T2(
+fullname VARCHAR(12),
+state CHAR(20) DEFAULT "Lagos");
 
+SELECT * FROM T2;
+
+INSERT INTO T2
+VALUES("Smith", "Kaduna");
+
+INSERT INTO T2(fullname)
+VALUES("Ade");
