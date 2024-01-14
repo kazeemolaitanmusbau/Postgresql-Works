@@ -80,19 +80,37 @@ GROUP BY department;
 SELECT MAX(salary) FROM employees;
 
 -- List employees earning more than $60,000.
+SELECT * FROM employees
+WHERE salary > 60000;
 
 
 -- Display the total salary expenditure for each department.
 
 
 -- Find the department with the highest average salary.
+with temp as (
+
+SELECT  department, avg(salary) as `Average Salary`
+FROM employees
+GROUP BY department )
+select * from temp 
+where `Average Salary` = ( select max(`Average Salary`) from temp) ;
+
 
 
 -- Show the departments where the average salary is less than $60,000.
-
+SELECT  department, avg(salary) as `Average Salary`
+FROM employees
+GROUP BY department
+having `Average Salary`< 60000;
 
 -- List employees with the highest salary in each department.
-
+with r as (
+select * ,
+dense_rank() over(partition by department order by salary desc) as salary_rank
+from employees )
+select employee_id, employee_name, department, salary from r 
+where salary_rank = 1;
 
 -- Display the total number of employees in the company.
 
