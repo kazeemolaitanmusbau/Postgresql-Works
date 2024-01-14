@@ -77,7 +77,7 @@ FROM employees
 GROUP BY department;
 
 -- Find the highest salary in the company.
-
+SELECT MAX(salary) FROM employees;
 
 -- List employees earning more than $60,000.
 
