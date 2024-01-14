@@ -56,20 +56,25 @@ INSERT INTO employees VALUES
 
 SELECT * FROM employees;
 
--- Display all unique departments.
-SELECT employee_id, employee_name, department, salary
+
+-- Calculate the average salary for each department.
+SELECT  department, avg(salary) as `Average Salary`
 FROM employees
 GROUP BY department;
--- Calculate the average salary for each department.
-SELECT  department, avg(salary)
+
+
+-- List the departments with more than seven employees.
+
+SELECT department, count(employee_id) `total employees`
 FROM employees
 GROUP BY department
-
--- List the departments with more than two employees.
+HAVING  `total employees`> 7;
 
 
 -- Show the total number of employees in each department.
-
+SELECT department, count(employee_id) `total employees`
+FROM employees
+GROUP BY department;
 
 -- Find the highest salary in the company.
 
